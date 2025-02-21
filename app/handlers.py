@@ -21,7 +21,7 @@ router = Router()
 CHANNEL_ID = int(os.getenv('CHANNEL_ID', '-1002387101531')) # тут канал бунта стоит
 
 # Список исключений по chat.id
-EXCLUDED_USER_IDS = [1062594217, 987654321]  # Замените на реальные ID пользователей
+EXCLUDED_USER_IDS = [1062594217, 484599038, 224378999]  # Замените на реальные ID пользователей
 
 
 # Определяем состояния
@@ -33,7 +33,7 @@ class Generate(StatesGroup):
 
 # Создаем кнопку для связи
 def create_contact_keyboard():
-    write_button = InlineKeyboardButton(text="Связаться сейчас!", url="https://t.me/Caporest")
+    write_button = InlineKeyboardButton(text="Связаться сейчас!", url="https://t.me/BuntClinica")
     keyboard = InlineKeyboardMarkup(inline_keyboard=[[write_button]])
     return keyboard
 
